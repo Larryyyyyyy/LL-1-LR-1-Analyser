@@ -1,0 +1,28 @@
+// " " is used to divide symbols so that each symbol should be divided by a " ".
+// "\epsilon" is used to describe ε.
+
+Terminal Symbol
++ * ( ) id
+
+Non-Terminal Symbol
+E T F
+
+Start Symbol
+E
+
+Productions
+E \to E + T
+E \to T
+T \to T * F
+T \to F
+F \to ( E )
+F \to id
+
+Enable Solve Left Recursion
+false
+
+LL(1) Sentence
+( id + id ) * id
+
+LR(1) Sentence
+( id + id ) * id
