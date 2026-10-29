@@ -2,27 +2,26 @@
 // "\epsilon" is used to describe ε.
 
 Terminal Symbol
-+ * ( ) id
+= * id
 
 Non-Terminal Symbol
-E T F
+S L R
 
 Start Symbol
-E
+S
 
 Productions
-E \to E + T
-E \to T
-T \to T * F
-T \to F
-F \to ( E )
-F \to id
+S \to L = R
+S \to R
+L \to * R
+L \to id
+R \to L
 
 Enable Solve Left Recursion
 false
 
 LL(1) Sentence
-( id + id ) * id
+id = id
 
-LR(1) Sentence
-( id + id ) * id
+SLR(1) Sentence
+id = id

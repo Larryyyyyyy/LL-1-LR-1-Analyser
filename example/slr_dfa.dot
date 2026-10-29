@@ -1,0 +1,96 @@
+digraph LR0_DFA {
+    rankdir=LR;
+    node [shape=box, fontname="Courier", style="rounded,filled", fillcolor="#f8f9fa"];
+    edge [fontname="Courier", fontsize=10];
+
+    I0 [shape=none, label=<
+        <TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="4" COLOR="#B0BEC5">
+            <TR><TD BGCOLOR="#37474F" ALIGN="CENTER"><FONT COLOR="#FFFFFF"><B>I<SUB>0</SUB></B></FONT></TD></TR>
+            <TR><TD BGCOLOR="#E3F2FD" ALIGN="LEFT"><FONT COLOR="#0D47A1"><B>START -&gt; · S </B></FONT></TD></TR>
+            <HR/>
+            <TR><TD BGCOLOR="#FAFAFA" ALIGN="LEFT"><FONT COLOR="#616161">S -&gt; · L = R </FONT></TD></TR>
+            <TR><TD BGCOLOR="#FAFAFA" ALIGN="LEFT"><FONT COLOR="#616161">S -&gt; · R </FONT></TD></TR>
+            <TR><TD BGCOLOR="#FAFAFA" ALIGN="LEFT"><FONT COLOR="#616161">L -&gt; · * R </FONT></TD></TR>
+            <TR><TD BGCOLOR="#FAFAFA" ALIGN="LEFT"><FONT COLOR="#616161">L -&gt; · id </FONT></TD></TR>
+            <TR><TD BGCOLOR="#FAFAFA" ALIGN="LEFT"><FONT COLOR="#616161">R -&gt; · L </FONT></TD></TR>
+        </TABLE>
+    >];
+    I1 [shape=none, label=<
+        <TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="4" COLOR="#B0BEC5">
+            <TR><TD BGCOLOR="#37474F" ALIGN="CENTER"><FONT COLOR="#FFFFFF"><B>I<SUB>1</SUB></B></FONT></TD></TR>
+            <TR><TD BGCOLOR="#E3F2FD" ALIGN="LEFT"><FONT COLOR="#0D47A1"><B>L -&gt; * · R </B></FONT></TD></TR>
+            <HR/>
+            <TR><TD BGCOLOR="#FAFAFA" ALIGN="LEFT"><FONT COLOR="#616161">R -&gt; · L </FONT></TD></TR>
+            <TR><TD BGCOLOR="#FAFAFA" ALIGN="LEFT"><FONT COLOR="#616161">L -&gt; · * R </FONT></TD></TR>
+            <TR><TD BGCOLOR="#FAFAFA" ALIGN="LEFT"><FONT COLOR="#616161">L -&gt; · id </FONT></TD></TR>
+        </TABLE>
+    >];
+    I2 [shape=none, label=<
+        <TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="4" COLOR="#B0BEC5">
+            <TR><TD BGCOLOR="#37474F" ALIGN="CENTER"><FONT COLOR="#FFFFFF"><B>I<SUB>2</SUB></B></FONT></TD></TR>
+            <TR><TD BGCOLOR="#E3F2FD" ALIGN="LEFT"><FONT COLOR="#0D47A1"><B>L -&gt; id · </B></FONT></TD></TR>
+        </TABLE>
+    >];
+    I3 [shape=none, label=<
+        <TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="4" COLOR="#B0BEC5">
+            <TR><TD BGCOLOR="#37474F" ALIGN="CENTER"><FONT COLOR="#FFFFFF"><B>I<SUB>3</SUB></B></FONT></TD></TR>
+            <TR><TD BGCOLOR="#E3F2FD" ALIGN="LEFT"><FONT COLOR="#0D47A1"><B>START -&gt; S · </B></FONT></TD></TR>
+        </TABLE>
+    >];
+    I4 [shape=none, label=<
+        <TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="4" COLOR="#B0BEC5">
+            <TR><TD BGCOLOR="#37474F" ALIGN="CENTER"><FONT COLOR="#FFFFFF"><B>I<SUB>4</SUB></B></FONT></TD></TR>
+            <TR><TD BGCOLOR="#E3F2FD" ALIGN="LEFT"><FONT COLOR="#0D47A1"><B>S -&gt; L · = R </B></FONT></TD></TR>
+            <TR><TD BGCOLOR="#E3F2FD" ALIGN="LEFT"><FONT COLOR="#0D47A1"><B>R -&gt; L · </B></FONT></TD></TR>
+        </TABLE>
+    >];
+    I5 [shape=none, label=<
+        <TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="4" COLOR="#B0BEC5">
+            <TR><TD BGCOLOR="#37474F" ALIGN="CENTER"><FONT COLOR="#FFFFFF"><B>I<SUB>5</SUB></B></FONT></TD></TR>
+            <TR><TD BGCOLOR="#E3F2FD" ALIGN="LEFT"><FONT COLOR="#0D47A1"><B>S -&gt; R · </B></FONT></TD></TR>
+        </TABLE>
+    >];
+    I6 [shape=none, label=<
+        <TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="4" COLOR="#B0BEC5">
+            <TR><TD BGCOLOR="#37474F" ALIGN="CENTER"><FONT COLOR="#FFFFFF"><B>I<SUB>6</SUB></B></FONT></TD></TR>
+            <TR><TD BGCOLOR="#E3F2FD" ALIGN="LEFT"><FONT COLOR="#0D47A1"><B>R -&gt; L · </B></FONT></TD></TR>
+        </TABLE>
+    >];
+    I7 [shape=none, label=<
+        <TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="4" COLOR="#B0BEC5">
+            <TR><TD BGCOLOR="#37474F" ALIGN="CENTER"><FONT COLOR="#FFFFFF"><B>I<SUB>7</SUB></B></FONT></TD></TR>
+            <TR><TD BGCOLOR="#E3F2FD" ALIGN="LEFT"><FONT COLOR="#0D47A1"><B>L -&gt; * R · </B></FONT></TD></TR>
+        </TABLE>
+    >];
+    I8 [shape=none, label=<
+        <TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="4" COLOR="#B0BEC5">
+            <TR><TD BGCOLOR="#37474F" ALIGN="CENTER"><FONT COLOR="#FFFFFF"><B>I<SUB>8</SUB></B></FONT></TD></TR>
+            <TR><TD BGCOLOR="#E3F2FD" ALIGN="LEFT"><FONT COLOR="#0D47A1"><B>S -&gt; L = · R </B></FONT></TD></TR>
+            <HR/>
+            <TR><TD BGCOLOR="#FAFAFA" ALIGN="LEFT"><FONT COLOR="#616161">R -&gt; · L </FONT></TD></TR>
+            <TR><TD BGCOLOR="#FAFAFA" ALIGN="LEFT"><FONT COLOR="#616161">L -&gt; · * R </FONT></TD></TR>
+            <TR><TD BGCOLOR="#FAFAFA" ALIGN="LEFT"><FONT COLOR="#616161">L -&gt; · id </FONT></TD></TR>
+        </TABLE>
+    >];
+    I9 [shape=none, label=<
+        <TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="4" COLOR="#B0BEC5">
+            <TR><TD BGCOLOR="#37474F" ALIGN="CENTER"><FONT COLOR="#FFFFFF"><B>I<SUB>9</SUB></B></FONT></TD></TR>
+            <TR><TD BGCOLOR="#E3F2FD" ALIGN="LEFT"><FONT COLOR="#0D47A1"><B>S -&gt; L = R · </B></FONT></TD></TR>
+        </TABLE>
+    >];
+
+    I0 -> I1 [label="*"];
+    I0 -> I4 [label="L"];
+    I0 -> I5 [label="R"];
+    I0 -> I3 [label="S"];
+    I0 -> I2 [label="id"];
+    I1 -> I1 [label="*"];
+    I1 -> I6 [label="L"];
+    I1 -> I7 [label="R"];
+    I1 -> I2 [label="id"];
+    I4 -> I8 [label="="];
+    I8 -> I1 [label="*"];
+    I8 -> I6 [label="L"];
+    I8 -> I9 [label="R"];
+    I8 -> I2 [label="id"];
+}
